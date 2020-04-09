@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2;
+}
+h4{
+  color:#3b3a30;
+}
+
+.header {
+  background-color:#3b3a30;
+  padding: 20px;
+  text-align: center;
+  color:#FFFFFF;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#C0C0C0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+  <h1>Outreach App</h1>
+</div>
+
+<div class="topnav">
+  <a href="HomePage.html">Home</a>
+  <a href="Admin.html">Admin Login </a>
+
+  <h4>Admin Registration Form</h4>
+</div>
+<center><pre>
+<form action="adminreg.jsp" method="post" >
+<font size="+1"><strong>
+ First Name     : <input type="text" name="fname" oninvalid="alert('Please update the highlighted mandatory fields');" required><br>
+ Last Name      : <input type="text" name="lname" oninvalid="alert('Please update the highlighted mandatory fields');" required><br>
+ Age            : <input type="number" name="age" oninvalid="alert('Please update the highlighted mandatory fields');" required><br>
+ Gender            <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label><br>
+ Contact Number : <input type="tel" name="anumber" pattern="[6-9]{1}[0-9]{9}" oninvalid="alert('Please update the highlighted mandatory fields');" reqired><br>
+ Admin ID       : <input type="text" name="aid" oninvalid="alert('Please update the highlighted mandatory fields');" required><br>
+ Password       : <input type="password" name="password" oninvalid="alert('Please update the highlighted mandatory fields');" required><br>
+<input type="submit" value="Register" ><br><br>
+</font></strong></pre></form></center>
+
+</body>
+</html>

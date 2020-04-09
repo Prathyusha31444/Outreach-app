@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2;
+}
+.header {
+  background-color:#3b3a30;
+  padding: 20px;
+  text-align: center;
+  color:#FFFFFF;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#C0C0C0;
+  color:#3b3a30
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.body{
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Outreach App</h1>
+  <h2>Admin</h2>
+</div>
+
+<div class="topnav">
+  <a href="HomePage.html">Home</a>
+  <a href="adminHome.jsp">Admin Home</a>
+<a href="logout.jsp">Log Out</a>
+</div>
+
+<h3>Wah points</h3>
+<form action="wahAccount.jsp">
+  
+<label for="activity">Beautifying the Nursery(between 0 and 50):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="50">
+<br><br> 
+
+<label for="activity">Greeting cards for students(between 0 and 50):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="50">
+ <br><br>
+
+<label for="activity">Seed ball making in weekend(between 0 and 100):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="100">
+ <br><br>
+
+<label for="activity">Teaching in Government school(between 0 and 200):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="200">
+<br><br>
+
+<label for="activity">Beach clean up(between 0 and 300):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="300">
+ <br><br>
+
+<label for="activity">Planting trees(between 0 and 400):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="400">
+ <br><br>
+
+<label for="activity">Weekend farming(between 0 and 500):</label><br>
+  <input type="range" id="activity" name="vol" min="0" max="5/00">
+<br><br>
+</form>
+ <button type="submit"  value="Submit">Submit</button>
+
+</body>
+</html>
